@@ -1,0 +1,6 @@
+.ddev
+config
+storage
+vendor
+web/uploads
+.env*

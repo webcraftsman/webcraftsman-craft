@@ -1,0 +1,9 @@
+{% extends "_layouts/jeff" %}
+
+{% block content %}
+  {% include '_partials/cover' %}
+    {% if entry is defined %}
+      {% include '_partials/content' %}
+    {% endif %}
+    {% block landing %}{% endblock %}
+{% endblock %}

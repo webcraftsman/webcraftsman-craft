@@ -1,0 +1,18 @@
+{% set showMeta = showMeta ?? false %}
+{% set title = title ?? entry.title ?? category.title ?? null %}
+
+<h1>{{ title }}</h1>
+  {% if entry.type == 'post' %}
+  {% if showMeta %}
+
+  <p class="post-time">
+    <span>
+      <time datetime="{{ entry.postDate|atom }}">{{ entry.postDate|date }}</time>
+    </span>
+  </p>
+
+
+  {% endif %}
+  {% endif %}
+
+

@@ -1,0 +1,10 @@
+{% extends "_layouts/jeff" %}
+{% import '_utilities/teaser' as post %}
+
+{% block content %}
+  {% include '_partials/cover' with { showMeta: true } %}
+
+    {% include '_partials/content' %}
+    {% include '_partials/comments' %}
+
+{% endblock %}

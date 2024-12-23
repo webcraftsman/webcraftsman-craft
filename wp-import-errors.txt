@@ -1,0 +1,770 @@
+The following unknown block types were encountered:
+ - core/shortcode
+--------------------------------------------------------------------------------
+Error: Client error: `GET https://jeffbridgforth.com/wp-content/uploads/vonat.mp3` resulted in a `404 Not Found` response:
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Page not found | Jeff Bridgforth</title>
+		<meta http-equiv="Content-T (truncated...)
+
+Content type: media
+Item ID: 10663
+Location: /var/www/html/vendor/guzzlehttp/guzzle/src/Exception/RequestException.php:111
+Trace:
+#0 /var/www/html/vendor/guzzlehttp/guzzle/src/Middleware.php(72): GuzzleHttp\Exception\RequestException::create(Object(GuzzleHttp\Psr7\Request), Object(GuzzleHttp\Psr7\Response), NULL, Array, NULL)
+#1 /var/www/html/vendor/guzzlehttp/promises/src/Promise.php(209): GuzzleHttp\Middleware::GuzzleHttp\{closure}(Object(GuzzleHttp\Psr7\Response))
+#2 /var/www/html/vendor/guzzlehttp/promises/src/Promise.php(158): GuzzleHttp\Promise\Promise::callHandler(1, Object(GuzzleHttp\Psr7\Response), NULL)
+#3 /var/www/html/vendor/guzzlehttp/promises/src/TaskQueue.php(52): GuzzleHttp\Promise\Promise::GuzzleHttp\Promise\{closure}()
+#4 /var/www/html/vendor/guzzlehttp/promises/src/Promise.php(251): GuzzleHttp\Promise\TaskQueue->run(true)
+#5 /var/www/html/vendor/guzzlehttp/promises/src/Promise.php(227): GuzzleHttp\Promise\Promise->invokeWaitFn()
+#6 /var/www/html/vendor/guzzlehttp/promises/src/Promise.php(272): GuzzleHttp\Promise\Promise->waitIfPending()
+#7 /var/www/html/vendor/guzzlehttp/promises/src/Promise.php(229): GuzzleHttp\Promise\Promise->invokeWaitList()
+#8 /var/www/html/vendor/guzzlehttp/promises/src/Promise.php(69): GuzzleHttp\Promise\Promise->waitIfPending()
+#9 /var/www/html/vendor/guzzlehttp/guzzle/src/Client.php(189): GuzzleHttp\Promise\Promise->wait()
+#10 /var/www/html/vendor/guzzlehttp/guzzle/src/ClientTrait.php(44): GuzzleHttp\Client->request('GET', 'https://jeffbri...', Array)
+#11 /var/www/html/vendor/craftcms/wp-import/src/importers/Media.php(75): GuzzleHttp\Client->get('https://jeffbri...')
+#12 /var/www/html/vendor/craftcms/wp-import/src/Command.php(1024): craft\wpimport\importers\Media->populate(Object(craft\elements\Asset), Array)
+#13 /var/www/html/vendor/craftcms/cms/src/console/Controller.php(493): craft\wpimport\Command->craft\wpimport\{closure}()
+#14 /var/www/html/vendor/craftcms/wp-import/src/Command.php(1009): craft\console\Controller->do('Importing media...', Object(Closure))
+#15 /var/www/html/vendor/craftcms/wp-import/src/Command.php(336): craft\wpimport\Command->import('media', Array)
+#16 /var/www/html/vendor/craftcms/cms/src/console/Controller.php(493): craft\wpimport\Command->craft\wpimport\{closure}()
+#17 /var/www/html/vendor/craftcms/wp-import/src/Command.php(328): craft\console\Controller->do('Importing media', Object(Closure))
+#18 [internal function]: craft\wpimport\Command->actionImport()
+#19 /var/www/html/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#20 /var/www/html/vendor/yiisoft/yii2/base/Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#21 /var/www/html/vendor/yiisoft/yii2/console/Controller.php(180): yii\base\Controller->runAction('', Array)
+#22 /var/www/html/vendor/craftcms/cms/src/console/ControllerTrait.php(88): yii\console\Controller->runAction('', Array)
+#23 /var/www/html/vendor/craftcms/cms/src/console/Controller.php(216): craft\console\Controller->traitRunAction('', Array)
+#24 /var/www/html/vendor/yiisoft/yii2/base/Module.php(552): craft\console\Controller->runAction('', Array)
+#25 /var/www/html/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('wp-import', Array)
+#26 /var/www/html/vendor/craftcms/cms/src/console/Application.php(91): yii\console\Application->runAction('wp-import', Array)
+#27 /var/www/html/vendor/yiisoft/yii2/console/Application.php(147): craft\console\Application->runAction('wp-import', Array)
+#28 /var/www/html/vendor/craftcms/cms/src/console/Application.php(122): yii\console\Application->handleRequest(Object(craft\console\Request))
+#29 /var/www/html/vendor/yiisoft/yii2/base/Application.php(384): craft\console\Application->handleRequest(Object(craft\console\Request))
+#30 /var/www/html/craft(13): yii\base\Application->run()
+#31 {main}
+--------------------------------------------------------------------------------
+Error: Client error: `GET https://jeffbridgforth.com/wp-content/uploads/budapest-subway.mp3` resulted in a `404 Not Found` response:
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Page not found | Jeff Bridgforth</title>
+		<meta http-equiv="Content-T (truncated...)
+
+Content type: media
+Item ID: 10586
+Location: /var/www/html/vendor/guzzlehttp/guzzle/src/Exception/RequestException.php:111
+Trace:
+#0 /var/www/html/vendor/guzzlehttp/guzzle/src/Middleware.php(72): GuzzleHttp\Exception\RequestException::create(Object(GuzzleHttp\Psr7\Request), Object(GuzzleHttp\Psr7\Response), NULL, Array, NULL)
+#1 /var/www/html/vendor/guzzlehttp/promises/src/Promise.php(209): GuzzleHttp\Middleware::GuzzleHttp\{closure}(Object(GuzzleHttp\Psr7\Response))
+#2 /var/www/html/vendor/guzzlehttp/promises/src/Promise.php(158): GuzzleHttp\Promise\Promise::callHandler(1, Object(GuzzleHttp\Psr7\Response), NULL)
+#3 /var/www/html/vendor/guzzlehttp/promises/src/TaskQueue.php(52): GuzzleHttp\Promise\Promise::GuzzleHttp\Promise\{closure}()
+#4 /var/www/html/vendor/guzzlehttp/promises/src/Promise.php(251): GuzzleHttp\Promise\TaskQueue->run(true)
+#5 /var/www/html/vendor/guzzlehttp/promises/src/Promise.php(227): GuzzleHttp\Promise\Promise->invokeWaitFn()
+#6 /var/www/html/vendor/guzzlehttp/promises/src/Promise.php(272): GuzzleHttp\Promise\Promise->waitIfPending()
+#7 /var/www/html/vendor/guzzlehttp/promises/src/Promise.php(229): GuzzleHttp\Promise\Promise->invokeWaitList()
+#8 /var/www/html/vendor/guzzlehttp/promises/src/Promise.php(69): GuzzleHttp\Promise\Promise->waitIfPending()
+#9 /var/www/html/vendor/guzzlehttp/guzzle/src/Client.php(189): GuzzleHttp\Promise\Promise->wait()
+#10 /var/www/html/vendor/guzzlehttp/guzzle/src/ClientTrait.php(44): GuzzleHttp\Client->request('GET', 'https://jeffbri...', Array)
+#11 /var/www/html/vendor/craftcms/wp-import/src/importers/Media.php(75): GuzzleHttp\Client->get('https://jeffbri...')
+#12 /var/www/html/vendor/craftcms/wp-import/src/Command.php(1024): craft\wpimport\importers\Media->populate(Object(craft\elements\Asset), Array)
+#13 /var/www/html/vendor/craftcms/cms/src/console/Controller.php(493): craft\wpimport\Command->craft\wpimport\{closure}()
+#14 /var/www/html/vendor/craftcms/wp-import/src/Command.php(1009): craft\console\Controller->do('Importing media...', Object(Closure))
+#15 /var/www/html/vendor/craftcms/wp-import/src/Command.php(336): craft\wpimport\Command->import('media', Array)
+#16 /var/www/html/vendor/craftcms/cms/src/console/Controller.php(493): craft\wpimport\Command->craft\wpimport\{closure}()
+#17 /var/www/html/vendor/craftcms/wp-import/src/Command.php(328): craft\console\Controller->do('Importing media', Object(Closure))
+#18 [internal function]: craft\wpimport\Command->actionImport()
+#19 /var/www/html/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#20 /var/www/html/vendor/yiisoft/yii2/base/Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#21 /var/www/html/vendor/yiisoft/yii2/console/Controller.php(180): yii\base\Controller->runAction('', Array)
+#22 /var/www/html/vendor/craftcms/cms/src/console/ControllerTrait.php(88): yii\console\Controller->runAction('', Array)
+#23 /var/www/html/vendor/craftcms/cms/src/console/Controller.php(216): craft\console\Controller->traitRunAction('', Array)
+#24 /var/www/html/vendor/yiisoft/yii2/base/Module.php(552): craft\console\Controller->runAction('', Array)
+#25 /var/www/html/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('wp-import', Array)
+#26 /var/www/html/vendor/craftcms/cms/src/console/Application.php(91): yii\console\Application->runAction('wp-import', Array)
+#27 /var/www/html/vendor/yiisoft/yii2/console/Application.php(147): craft\console\Application->runAction('wp-import', Array)
+#28 /var/www/html/vendor/craftcms/cms/src/console/Application.php(122): yii\console\Application->handleRequest(Object(craft\console\Request))
+#29 /var/www/html/vendor/yiisoft/yii2/base/Application.php(384): craft\console\Application->handleRequest(Object(craft\console\Request))
+#30 /var/www/html/craft(13): yii\base\Application->run()
+#31 {main}
+--------------------------------------------------------------------------------
+Error: Client error: `GET https://jeffbridgforth.com/wp-content/uploads/css-cafe-utopia.webp` resulted in a `404 Not Found` response:
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Page not found | Jeff Bridgforth</title>
+		<meta http-equiv="Content-T (truncated...)
+
+Content type: media
+Item ID: 10483
+Location: /var/www/html/vendor/guzzlehttp/guzzle/src/Exception/RequestException.php:111
+Trace:
+#0 /var/www/html/vendor/guzzlehttp/guzzle/src/Middleware.php(72): GuzzleHttp\Exception\RequestException::create(Object(GuzzleHttp\Psr7\Request), Object(GuzzleHttp\Psr7\Response), NULL, Array, NULL)
+#1 /var/www/html/vendor/guzzlehttp/promises/src/Promise.php(209): GuzzleHttp\Middleware::GuzzleHttp\{closure}(Object(GuzzleHttp\Psr7\Response))
+#2 /var/www/html/vendor/guzzlehttp/promises/src/Promise.php(158): GuzzleHttp\Promise\Promise::callHandler(1, Object(GuzzleHttp\Psr7\Response), NULL)
+#3 /var/www/html/vendor/guzzlehttp/promises/src/TaskQueue.php(52): GuzzleHttp\Promise\Promise::GuzzleHttp\Promise\{closure}()
+#4 /var/www/html/vendor/guzzlehttp/promises/src/Promise.php(251): GuzzleHttp\Promise\TaskQueue->run(true)
+#5 /var/www/html/vendor/guzzlehttp/promises/src/Promise.php(227): GuzzleHttp\Promise\Promise->invokeWaitFn()
+#6 /var/www/html/vendor/guzzlehttp/promises/src/Promise.php(272): GuzzleHttp\Promise\Promise->waitIfPending()
+#7 /var/www/html/vendor/guzzlehttp/promises/src/Promise.php(229): GuzzleHttp\Promise\Promise->invokeWaitList()
+#8 /var/www/html/vendor/guzzlehttp/promises/src/Promise.php(69): GuzzleHttp\Promise\Promise->waitIfPending()
+#9 /var/www/html/vendor/guzzlehttp/guzzle/src/Client.php(189): GuzzleHttp\Promise\Promise->wait()
+#10 /var/www/html/vendor/guzzlehttp/guzzle/src/ClientTrait.php(44): GuzzleHttp\Client->request('GET', 'https://jeffbri...', Array)
+#11 /var/www/html/vendor/craftcms/wp-import/src/importers/Media.php(75): GuzzleHttp\Client->get('https://jeffbri...')
+#12 /var/www/html/vendor/craftcms/wp-import/src/Command.php(1024): craft\wpimport\importers\Media->populate(Object(craft\elements\Asset), Array)
+#13 /var/www/html/vendor/craftcms/cms/src/console/Controller.php(493): craft\wpimport\Command->craft\wpimport\{closure}()
+#14 /var/www/html/vendor/craftcms/wp-import/src/Command.php(1009): craft\console\Controller->do('Importing media...', Object(Closure))
+#15 /var/www/html/vendor/craftcms/wp-import/src/Command.php(336): craft\wpimport\Command->import('media', Array)
+#16 /var/www/html/vendor/craftcms/cms/src/console/Controller.php(493): craft\wpimport\Command->craft\wpimport\{closure}()
+#17 /var/www/html/vendor/craftcms/wp-import/src/Command.php(328): craft\console\Controller->do('Importing media', Object(Closure))
+#18 [internal function]: craft\wpimport\Command->actionImport()
+#19 /var/www/html/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#20 /var/www/html/vendor/yiisoft/yii2/base/Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#21 /var/www/html/vendor/yiisoft/yii2/console/Controller.php(180): yii\base\Controller->runAction('', Array)
+#22 /var/www/html/vendor/craftcms/cms/src/console/ControllerTrait.php(88): yii\console\Controller->runAction('', Array)
+#23 /var/www/html/vendor/craftcms/cms/src/console/Controller.php(216): craft\console\Controller->traitRunAction('', Array)
+#24 /var/www/html/vendor/yiisoft/yii2/base/Module.php(552): craft\console\Controller->runAction('', Array)
+#25 /var/www/html/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('wp-import', Array)
+#26 /var/www/html/vendor/craftcms/cms/src/console/Application.php(91): yii\console\Application->runAction('wp-import', Array)
+#27 /var/www/html/vendor/yiisoft/yii2/console/Application.php(147): craft\console\Application->runAction('wp-import', Array)
+#28 /var/www/html/vendor/craftcms/cms/src/console/Application.php(122): yii\console\Application->handleRequest(Object(craft\console\Request))
+#29 /var/www/html/vendor/yiisoft/yii2/base/Application.php(384): craft\console\Application->handleRequest(Object(craft\console\Request))
+#30 /var/www/html/craft(13): yii\base\Application->run()
+#31 {main}
+--------------------------------------------------------------------------------
+Error: Client error: `GET https://jeffbridgforth.com/wp-content/uploads/jbw.mp3` resulted in a `404 Not Found` response:
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Page not found | Jeff Bridgforth</title>
+		<meta http-equiv="Content-T (truncated...)
+
+Content type: media
+Item ID: 10062
+Location: /var/www/html/vendor/guzzlehttp/guzzle/src/Exception/RequestException.php:111
+Trace:
+#0 /var/www/html/vendor/guzzlehttp/guzzle/src/Middleware.php(72): GuzzleHttp\Exception\RequestException::create(Object(GuzzleHttp\Psr7\Request), Object(GuzzleHttp\Psr7\Response), NULL, Array, NULL)
+#1 /var/www/html/vendor/guzzlehttp/promises/src/Promise.php(209): GuzzleHttp\Middleware::GuzzleHttp\{closure}(Object(GuzzleHttp\Psr7\Response))
+#2 /var/www/html/vendor/guzzlehttp/promises/src/Promise.php(158): GuzzleHttp\Promise\Promise::callHandler(1, Object(GuzzleHttp\Psr7\Response), NULL)
+#3 /var/www/html/vendor/guzzlehttp/promises/src/TaskQueue.php(52): GuzzleHttp\Promise\Promise::GuzzleHttp\Promise\{closure}()
+#4 /var/www/html/vendor/guzzlehttp/promises/src/Promise.php(251): GuzzleHttp\Promise\TaskQueue->run(true)
+#5 /var/www/html/vendor/guzzlehttp/promises/src/Promise.php(227): GuzzleHttp\Promise\Promise->invokeWaitFn()
+#6 /var/www/html/vendor/guzzlehttp/promises/src/Promise.php(272): GuzzleHttp\Promise\Promise->waitIfPending()
+#7 /var/www/html/vendor/guzzlehttp/promises/src/Promise.php(229): GuzzleHttp\Promise\Promise->invokeWaitList()
+#8 /var/www/html/vendor/guzzlehttp/promises/src/Promise.php(69): GuzzleHttp\Promise\Promise->waitIfPending()
+#9 /var/www/html/vendor/guzzlehttp/guzzle/src/Client.php(189): GuzzleHttp\Promise\Promise->wait()
+#10 /var/www/html/vendor/guzzlehttp/guzzle/src/ClientTrait.php(44): GuzzleHttp\Client->request('GET', 'https://jeffbri...', Array)
+#11 /var/www/html/vendor/craftcms/wp-import/src/importers/Media.php(75): GuzzleHttp\Client->get('https://jeffbri...')
+#12 /var/www/html/vendor/craftcms/wp-import/src/Command.php(1024): craft\wpimport\importers\Media->populate(Object(craft\elements\Asset), Array)
+#13 /var/www/html/vendor/craftcms/cms/src/console/Controller.php(493): craft\wpimport\Command->craft\wpimport\{closure}()
+#14 /var/www/html/vendor/craftcms/wp-import/src/Command.php(1009): craft\console\Controller->do('Importing media...', Object(Closure))
+#15 /var/www/html/vendor/craftcms/wp-import/src/Command.php(336): craft\wpimport\Command->import('media', Array)
+#16 /var/www/html/vendor/craftcms/cms/src/console/Controller.php(493): craft\wpimport\Command->craft\wpimport\{closure}()
+#17 /var/www/html/vendor/craftcms/wp-import/src/Command.php(328): craft\console\Controller->do('Importing media', Object(Closure))
+#18 [internal function]: craft\wpimport\Command->actionImport()
+#19 /var/www/html/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#20 /var/www/html/vendor/yiisoft/yii2/base/Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#21 /var/www/html/vendor/yiisoft/yii2/console/Controller.php(180): yii\base\Controller->runAction('', Array)
+#22 /var/www/html/vendor/craftcms/cms/src/console/ControllerTrait.php(88): yii\console\Controller->runAction('', Array)
+#23 /var/www/html/vendor/craftcms/cms/src/console/Controller.php(216): craft\console\Controller->traitRunAction('', Array)
+#24 /var/www/html/vendor/yiisoft/yii2/base/Module.php(552): craft\console\Controller->runAction('', Array)
+#25 /var/www/html/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('wp-import', Array)
+#26 /var/www/html/vendor/craftcms/cms/src/console/Application.php(91): yii\console\Application->runAction('wp-import', Array)
+#27 /var/www/html/vendor/yiisoft/yii2/console/Application.php(147): craft\console\Application->runAction('wp-import', Array)
+#28 /var/www/html/vendor/craftcms/cms/src/console/Application.php(122): yii\console\Application->handleRequest(Object(craft\console\Request))
+#29 /var/www/html/vendor/yiisoft/yii2/base/Application.php(384): craft\console\Application->handleRequest(Object(craft\console\Request))
+#30 /var/www/html/craft(13): yii\base\Application->run()
+#31 {main}
+--------------------------------------------------------------------------------
+Error: Client error: `GET https://jeffbridgforth.com/wp-content/uploads/jb-logo.svg` resulted in a `404 Not Found` response:
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Page not found | Jeff Bridgforth</title>
+		<meta http-equiv="Content-T (truncated...)
+
+Content type: media
+Item ID: 9780
+Location: /var/www/html/vendor/guzzlehttp/guzzle/src/Exception/RequestException.php:111
+Trace:
+#0 /var/www/html/vendor/guzzlehttp/guzzle/src/Middleware.php(72): GuzzleHttp\Exception\RequestException::create(Object(GuzzleHttp\Psr7\Request), Object(GuzzleHttp\Psr7\Response), NULL, Array, NULL)
+#1 /var/www/html/vendor/guzzlehttp/promises/src/Promise.php(209): GuzzleHttp\Middleware::GuzzleHttp\{closure}(Object(GuzzleHttp\Psr7\Response))
+#2 /var/www/html/vendor/guzzlehttp/promises/src/Promise.php(158): GuzzleHttp\Promise\Promise::callHandler(1, Object(GuzzleHttp\Psr7\Response), NULL)
+#3 /var/www/html/vendor/guzzlehttp/promises/src/TaskQueue.php(52): GuzzleHttp\Promise\Promise::GuzzleHttp\Promise\{closure}()
+#4 /var/www/html/vendor/guzzlehttp/promises/src/Promise.php(251): GuzzleHttp\Promise\TaskQueue->run(true)
+#5 /var/www/html/vendor/guzzlehttp/promises/src/Promise.php(227): GuzzleHttp\Promise\Promise->invokeWaitFn()
+#6 /var/www/html/vendor/guzzlehttp/promises/src/Promise.php(272): GuzzleHttp\Promise\Promise->waitIfPending()
+#7 /var/www/html/vendor/guzzlehttp/promises/src/Promise.php(229): GuzzleHttp\Promise\Promise->invokeWaitList()
+#8 /var/www/html/vendor/guzzlehttp/promises/src/Promise.php(69): GuzzleHttp\Promise\Promise->waitIfPending()
+#9 /var/www/html/vendor/guzzlehttp/guzzle/src/Client.php(189): GuzzleHttp\Promise\Promise->wait()
+#10 /var/www/html/vendor/guzzlehttp/guzzle/src/ClientTrait.php(44): GuzzleHttp\Client->request('GET', 'https://jeffbri...', Array)
+#11 /var/www/html/vendor/craftcms/wp-import/src/importers/Media.php(75): GuzzleHttp\Client->get('https://jeffbri...')
+#12 /var/www/html/vendor/craftcms/wp-import/src/Command.php(1024): craft\wpimport\importers\Media->populate(Object(craft\elements\Asset), Array)
+#13 /var/www/html/vendor/craftcms/cms/src/console/Controller.php(493): craft\wpimport\Command->craft\wpimport\{closure}()
+#14 /var/www/html/vendor/craftcms/wp-import/src/Command.php(1009): craft\console\Controller->do('Importing media...', Object(Closure))
+#15 /var/www/html/vendor/craftcms/wp-import/src/Command.php(336): craft\wpimport\Command->import('media', Array)
+#16 /var/www/html/vendor/craftcms/cms/src/console/Controller.php(493): craft\wpimport\Command->craft\wpimport\{closure}()
+#17 /var/www/html/vendor/craftcms/wp-import/src/Command.php(328): craft\console\Controller->do('Importing media', Object(Closure))
+#18 [internal function]: craft\wpimport\Command->actionImport()
+#19 /var/www/html/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#20 /var/www/html/vendor/yiisoft/yii2/base/Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#21 /var/www/html/vendor/yiisoft/yii2/console/Controller.php(180): yii\base\Controller->runAction('', Array)
+#22 /var/www/html/vendor/craftcms/cms/src/console/ControllerTrait.php(88): yii\console\Controller->runAction('', Array)
+#23 /var/www/html/vendor/craftcms/cms/src/console/Controller.php(216): craft\console\Controller->traitRunAction('', Array)
+#24 /var/www/html/vendor/yiisoft/yii2/base/Module.php(552): craft\console\Controller->runAction('', Array)
+#25 /var/www/html/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('wp-import', Array)
+#26 /var/www/html/vendor/craftcms/cms/src/console/Application.php(91): yii\console\Application->runAction('wp-import', Array)
+#27 /var/www/html/vendor/yiisoft/yii2/console/Application.php(147): craft\console\Application->runAction('wp-import', Array)
+#28 /var/www/html/vendor/craftcms/cms/src/console/Application.php(122): yii\console\Application->handleRequest(Object(craft\console\Request))
+#29 /var/www/html/vendor/yiisoft/yii2/base/Application.php(384): craft\console\Application->handleRequest(Object(craft\console\Request))
+#30 /var/www/html/craft(13): yii\base\Application->run()
+#31 {main}
+--------------------------------------------------------------------------------
+Error: Client error: `GET https://jeffbridgforth.com/wp-content/uploads/trusted-partners.webm` resulted in a `404 Not Found` response:
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Page not found | Jeff Bridgforth</title>
+		<meta http-equiv="Content-T (truncated...)
+
+Content type: media
+Item ID: 9528
+Location: /var/www/html/vendor/guzzlehttp/guzzle/src/Exception/RequestException.php:111
+Trace:
+#0 /var/www/html/vendor/guzzlehttp/guzzle/src/Middleware.php(72): GuzzleHttp\Exception\RequestException::create(Object(GuzzleHttp\Psr7\Request), Object(GuzzleHttp\Psr7\Response), NULL, Array, NULL)
+#1 /var/www/html/vendor/guzzlehttp/promises/src/Promise.php(209): GuzzleHttp\Middleware::GuzzleHttp\{closure}(Object(GuzzleHttp\Psr7\Response))
+#2 /var/www/html/vendor/guzzlehttp/promises/src/Promise.php(158): GuzzleHttp\Promise\Promise::callHandler(1, Object(GuzzleHttp\Psr7\Response), NULL)
+#3 /var/www/html/vendor/guzzlehttp/promises/src/TaskQueue.php(52): GuzzleHttp\Promise\Promise::GuzzleHttp\Promise\{closure}()
+#4 /var/www/html/vendor/guzzlehttp/promises/src/Promise.php(251): GuzzleHttp\Promise\TaskQueue->run(true)
+#5 /var/www/html/vendor/guzzlehttp/promises/src/Promise.php(227): GuzzleHttp\Promise\Promise->invokeWaitFn()
+#6 /var/www/html/vendor/guzzlehttp/promises/src/Promise.php(272): GuzzleHttp\Promise\Promise->waitIfPending()
+#7 /var/www/html/vendor/guzzlehttp/promises/src/Promise.php(229): GuzzleHttp\Promise\Promise->invokeWaitList()
+#8 /var/www/html/vendor/guzzlehttp/promises/src/Promise.php(69): GuzzleHttp\Promise\Promise->waitIfPending()
+#9 /var/www/html/vendor/guzzlehttp/guzzle/src/Client.php(189): GuzzleHttp\Promise\Promise->wait()
+#10 /var/www/html/vendor/guzzlehttp/guzzle/src/ClientTrait.php(44): GuzzleHttp\Client->request('GET', 'https://jeffbri...', Array)
+#11 /var/www/html/vendor/craftcms/wp-import/src/importers/Media.php(75): GuzzleHttp\Client->get('https://jeffbri...')
+#12 /var/www/html/vendor/craftcms/wp-import/src/Command.php(1024): craft\wpimport\importers\Media->populate(Object(craft\elements\Asset), Array)
+#13 /var/www/html/vendor/craftcms/cms/src/console/Controller.php(493): craft\wpimport\Command->craft\wpimport\{closure}()
+#14 /var/www/html/vendor/craftcms/wp-import/src/Command.php(1009): craft\console\Controller->do('Importing media...', Object(Closure))
+#15 /var/www/html/vendor/craftcms/wp-import/src/Command.php(336): craft\wpimport\Command->import('media', Array)
+#16 /var/www/html/vendor/craftcms/cms/src/console/Controller.php(493): craft\wpimport\Command->craft\wpimport\{closure}()
+#17 /var/www/html/vendor/craftcms/wp-import/src/Command.php(328): craft\console\Controller->do('Importing media', Object(Closure))
+#18 [internal function]: craft\wpimport\Command->actionImport()
+#19 /var/www/html/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#20 /var/www/html/vendor/yiisoft/yii2/base/Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#21 /var/www/html/vendor/yiisoft/yii2/console/Controller.php(180): yii\base\Controller->runAction('', Array)
+#22 /var/www/html/vendor/craftcms/cms/src/console/ControllerTrait.php(88): yii\console\Controller->runAction('', Array)
+#23 /var/www/html/vendor/craftcms/cms/src/console/Controller.php(216): craft\console\Controller->traitRunAction('', Array)
+#24 /var/www/html/vendor/yiisoft/yii2/base/Module.php(552): craft\console\Controller->runAction('', Array)
+#25 /var/www/html/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('wp-import', Array)
+#26 /var/www/html/vendor/craftcms/cms/src/console/Application.php(91): yii\console\Application->runAction('wp-import', Array)
+#27 /var/www/html/vendor/yiisoft/yii2/console/Application.php(147): craft\console\Application->runAction('wp-import', Array)
+#28 /var/www/html/vendor/craftcms/cms/src/console/Application.php(122): yii\console\Application->handleRequest(Object(craft\console\Request))
+#29 /var/www/html/vendor/yiisoft/yii2/base/Application.php(384): craft\console\Application->handleRequest(Object(craft\console\Request))
+#30 /var/www/html/craft(13): yii\base\Application->run()
+#31 {main}
+--------------------------------------------------------------------------------
+Error: Client error: `GET https://jeffbridgforth.com/wp-content/uploads/Ant-Man_and_the_Wasp_Quantumania_Poster_Tall-1.webp` resulted in a `404 Not Found` response:
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Page not found | Jeff Bridgforth</title>
+		<meta http-equiv="Content-T (truncated...)
+
+Content type: media
+Item ID: 9457
+Location: /var/www/html/vendor/guzzlehttp/guzzle/src/Exception/RequestException.php:111
+Trace:
+#0 /var/www/html/vendor/guzzlehttp/guzzle/src/Middleware.php(72): GuzzleHttp\Exception\RequestException::create(Object(GuzzleHttp\Psr7\Request), Object(GuzzleHttp\Psr7\Response), NULL, Array, NULL)
+#1 /var/www/html/vendor/guzzlehttp/promises/src/Promise.php(209): GuzzleHttp\Middleware::GuzzleHttp\{closure}(Object(GuzzleHttp\Psr7\Response))
+#2 /var/www/html/vendor/guzzlehttp/promises/src/Promise.php(158): GuzzleHttp\Promise\Promise::callHandler(1, Object(GuzzleHttp\Psr7\Response), NULL)
+#3 /var/www/html/vendor/guzzlehttp/promises/src/TaskQueue.php(52): GuzzleHttp\Promise\Promise::GuzzleHttp\Promise\{closure}()
+#4 /var/www/html/vendor/guzzlehttp/promises/src/Promise.php(251): GuzzleHttp\Promise\TaskQueue->run(true)
+#5 /var/www/html/vendor/guzzlehttp/promises/src/Promise.php(227): GuzzleHttp\Promise\Promise->invokeWaitFn()
+#6 /var/www/html/vendor/guzzlehttp/promises/src/Promise.php(272): GuzzleHttp\Promise\Promise->waitIfPending()
+#7 /var/www/html/vendor/guzzlehttp/promises/src/Promise.php(229): GuzzleHttp\Promise\Promise->invokeWaitList()
+#8 /var/www/html/vendor/guzzlehttp/promises/src/Promise.php(69): GuzzleHttp\Promise\Promise->waitIfPending()
+#9 /var/www/html/vendor/guzzlehttp/guzzle/src/Client.php(189): GuzzleHttp\Promise\Promise->wait()
+#10 /var/www/html/vendor/guzzlehttp/guzzle/src/ClientTrait.php(44): GuzzleHttp\Client->request('GET', 'https://jeffbri...', Array)
+#11 /var/www/html/vendor/craftcms/wp-import/src/importers/Media.php(75): GuzzleHttp\Client->get('https://jeffbri...')
+#12 /var/www/html/vendor/craftcms/wp-import/src/Command.php(1024): craft\wpimport\importers\Media->populate(Object(craft\elements\Asset), Array)
+#13 /var/www/html/vendor/craftcms/cms/src/console/Controller.php(493): craft\wpimport\Command->craft\wpimport\{closure}()
+#14 /var/www/html/vendor/craftcms/wp-import/src/Command.php(1009): craft\console\Controller->do('Importing media...', Object(Closure))
+#15 /var/www/html/vendor/craftcms/wp-import/src/Command.php(336): craft\wpimport\Command->import('media', Array)
+#16 /var/www/html/vendor/craftcms/cms/src/console/Controller.php(493): craft\wpimport\Command->craft\wpimport\{closure}()
+#17 /var/www/html/vendor/craftcms/wp-import/src/Command.php(328): craft\console\Controller->do('Importing media', Object(Closure))
+#18 [internal function]: craft\wpimport\Command->actionImport()
+#19 /var/www/html/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#20 /var/www/html/vendor/yiisoft/yii2/base/Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#21 /var/www/html/vendor/yiisoft/yii2/console/Controller.php(180): yii\base\Controller->runAction('', Array)
+#22 /var/www/html/vendor/craftcms/cms/src/console/ControllerTrait.php(88): yii\console\Controller->runAction('', Array)
+#23 /var/www/html/vendor/craftcms/cms/src/console/Controller.php(216): craft\console\Controller->traitRunAction('', Array)
+#24 /var/www/html/vendor/yiisoft/yii2/base/Module.php(552): craft\console\Controller->runAction('', Array)
+#25 /var/www/html/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('wp-import', Array)
+#26 /var/www/html/vendor/craftcms/cms/src/console/Application.php(91): yii\console\Application->runAction('wp-import', Array)
+#27 /var/www/html/vendor/yiisoft/yii2/console/Application.php(147): craft\console\Application->runAction('wp-import', Array)
+#28 /var/www/html/vendor/craftcms/cms/src/console/Application.php(122): yii\console\Application->handleRequest(Object(craft\console\Request))
+#29 /var/www/html/vendor/yiisoft/yii2/base/Application.php(384): craft\console\Application->handleRequest(Object(craft\console\Request))
+#30 /var/www/html/craft(13): yii\base\Application->run()
+#31 {main}
+--------------------------------------------------------------------------------
+Error: Client error: `GET https://jeffbridgforth.com/wp-content/uploads/Ant-Man_and_the_Wasp_Quantumania_Poster_Tall.webp` resulted in a `404 Not Found` response:
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Page not found | Jeff Bridgforth</title>
+		<meta http-equiv="Content-T (truncated...)
+
+Content type: media
+Item ID: 9456
+Location: /var/www/html/vendor/guzzlehttp/guzzle/src/Exception/RequestException.php:111
+Trace:
+#0 /var/www/html/vendor/guzzlehttp/guzzle/src/Middleware.php(72): GuzzleHttp\Exception\RequestException::create(Object(GuzzleHttp\Psr7\Request), Object(GuzzleHttp\Psr7\Response), NULL, Array, NULL)
+#1 /var/www/html/vendor/guzzlehttp/promises/src/Promise.php(209): GuzzleHttp\Middleware::GuzzleHttp\{closure}(Object(GuzzleHttp\Psr7\Response))
+#2 /var/www/html/vendor/guzzlehttp/promises/src/Promise.php(158): GuzzleHttp\Promise\Promise::callHandler(1, Object(GuzzleHttp\Psr7\Response), NULL)
+#3 /var/www/html/vendor/guzzlehttp/promises/src/TaskQueue.php(52): GuzzleHttp\Promise\Promise::GuzzleHttp\Promise\{closure}()
+#4 /var/www/html/vendor/guzzlehttp/promises/src/Promise.php(251): GuzzleHttp\Promise\TaskQueue->run(true)
+#5 /var/www/html/vendor/guzzlehttp/promises/src/Promise.php(227): GuzzleHttp\Promise\Promise->invokeWaitFn()
+#6 /var/www/html/vendor/guzzlehttp/promises/src/Promise.php(272): GuzzleHttp\Promise\Promise->waitIfPending()
+#7 /var/www/html/vendor/guzzlehttp/promises/src/Promise.php(229): GuzzleHttp\Promise\Promise->invokeWaitList()
+#8 /var/www/html/vendor/guzzlehttp/promises/src/Promise.php(69): GuzzleHttp\Promise\Promise->waitIfPending()
+#9 /var/www/html/vendor/guzzlehttp/guzzle/src/Client.php(189): GuzzleHttp\Promise\Promise->wait()
+#10 /var/www/html/vendor/guzzlehttp/guzzle/src/ClientTrait.php(44): GuzzleHttp\Client->request('GET', 'https://jeffbri...', Array)
+#11 /var/www/html/vendor/craftcms/wp-import/src/importers/Media.php(75): GuzzleHttp\Client->get('https://jeffbri...')
+#12 /var/www/html/vendor/craftcms/wp-import/src/Command.php(1024): craft\wpimport\importers\Media->populate(Object(craft\elements\Asset), Array)
+#13 /var/www/html/vendor/craftcms/cms/src/console/Controller.php(493): craft\wpimport\Command->craft\wpimport\{closure}()
+#14 /var/www/html/vendor/craftcms/wp-import/src/Command.php(1009): craft\console\Controller->do('Importing media...', Object(Closure))
+#15 /var/www/html/vendor/craftcms/wp-import/src/Command.php(336): craft\wpimport\Command->import('media', Array)
+#16 /var/www/html/vendor/craftcms/cms/src/console/Controller.php(493): craft\wpimport\Command->craft\wpimport\{closure}()
+#17 /var/www/html/vendor/craftcms/wp-import/src/Command.php(328): craft\console\Controller->do('Importing media', Object(Closure))
+#18 [internal function]: craft\wpimport\Command->actionImport()
+#19 /var/www/html/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#20 /var/www/html/vendor/yiisoft/yii2/base/Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#21 /var/www/html/vendor/yiisoft/yii2/console/Controller.php(180): yii\base\Controller->runAction('', Array)
+#22 /var/www/html/vendor/craftcms/cms/src/console/ControllerTrait.php(88): yii\console\Controller->runAction('', Array)
+#23 /var/www/html/vendor/craftcms/cms/src/console/Controller.php(216): craft\console\Controller->traitRunAction('', Array)
+#24 /var/www/html/vendor/yiisoft/yii2/base/Module.php(552): craft\console\Controller->runAction('', Array)
+#25 /var/www/html/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('wp-import', Array)
+#26 /var/www/html/vendor/craftcms/cms/src/console/Application.php(91): yii\console\Application->runAction('wp-import', Array)
+#27 /var/www/html/vendor/yiisoft/yii2/console/Application.php(147): craft\console\Application->runAction('wp-import', Array)
+#28 /var/www/html/vendor/craftcms/cms/src/console/Application.php(122): yii\console\Application->handleRequest(Object(craft\console\Request))
+#29 /var/www/html/vendor/yiisoft/yii2/base/Application.php(384): craft\console\Application->handleRequest(Object(craft\console\Request))
+#30 /var/www/html/craft(13): yii\base\Application->run()
+#31 {main}
+--------------------------------------------------------------------------------
+Error: Client error: `GET https://jeffbridgforth.com/wp-content/uploads/Mint_Chocolate_Mini_12_No_BG__60677.1583436980.1280.1280__96838_53bead4a-d74c-4f5a-9220-175bf92d8949_1024x1024@2x.webp` resulted in a `404 Not Found` response:
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Page not found | Jeff Bridgforth</title>
+		<meta http-equiv="Content-T (truncated...)
+
+Content type: media
+Item ID: 9393
+Location: /var/www/html/vendor/guzzlehttp/guzzle/src/Exception/RequestException.php:111
+Trace:
+#0 /var/www/html/vendor/guzzlehttp/guzzle/src/Middleware.php(72): GuzzleHttp\Exception\RequestException::create(Object(GuzzleHttp\Psr7\Request), Object(GuzzleHttp\Psr7\Response), NULL, Array, NULL)
+#1 /var/www/html/vendor/guzzlehttp/promises/src/Promise.php(209): GuzzleHttp\Middleware::GuzzleHttp\{closure}(Object(GuzzleHttp\Psr7\Response))
+#2 /var/www/html/vendor/guzzlehttp/promises/src/Promise.php(158): GuzzleHttp\Promise\Promise::callHandler(1, Object(GuzzleHttp\Psr7\Response), NULL)
+#3 /var/www/html/vendor/guzzlehttp/promises/src/TaskQueue.php(52): GuzzleHttp\Promise\Promise::GuzzleHttp\Promise\{closure}()
+#4 /var/www/html/vendor/guzzlehttp/promises/src/Promise.php(251): GuzzleHttp\Promise\TaskQueue->run(true)
+#5 /var/www/html/vendor/guzzlehttp/promises/src/Promise.php(227): GuzzleHttp\Promise\Promise->invokeWaitFn()
+#6 /var/www/html/vendor/guzzlehttp/promises/src/Promise.php(272): GuzzleHttp\Promise\Promise->waitIfPending()
+#7 /var/www/html/vendor/guzzlehttp/promises/src/Promise.php(229): GuzzleHttp\Promise\Promise->invokeWaitList()
+#8 /var/www/html/vendor/guzzlehttp/promises/src/Promise.php(69): GuzzleHttp\Promise\Promise->waitIfPending()
+#9 /var/www/html/vendor/guzzlehttp/guzzle/src/Client.php(189): GuzzleHttp\Promise\Promise->wait()
+#10 /var/www/html/vendor/guzzlehttp/guzzle/src/ClientTrait.php(44): GuzzleHttp\Client->request('GET', 'https://jeffbri...', Array)
+#11 /var/www/html/vendor/craftcms/wp-import/src/importers/Media.php(75): GuzzleHttp\Client->get('https://jeffbri...')
+#12 /var/www/html/vendor/craftcms/wp-import/src/Command.php(1024): craft\wpimport\importers\Media->populate(Object(craft\elements\Asset), Array)
+#13 /var/www/html/vendor/craftcms/cms/src/console/Controller.php(493): craft\wpimport\Command->craft\wpimport\{closure}()
+#14 /var/www/html/vendor/craftcms/wp-import/src/Command.php(1009): craft\console\Controller->do('Importing media...', Object(Closure))
+#15 /var/www/html/vendor/craftcms/wp-import/src/Command.php(336): craft\wpimport\Command->import('media', Array)
+#16 /var/www/html/vendor/craftcms/cms/src/console/Controller.php(493): craft\wpimport\Command->craft\wpimport\{closure}()
+#17 /var/www/html/vendor/craftcms/wp-import/src/Command.php(328): craft\console\Controller->do('Importing media', Object(Closure))
+#18 [internal function]: craft\wpimport\Command->actionImport()
+#19 /var/www/html/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#20 /var/www/html/vendor/yiisoft/yii2/base/Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#21 /var/www/html/vendor/yiisoft/yii2/console/Controller.php(180): yii\base\Controller->runAction('', Array)
+#22 /var/www/html/vendor/craftcms/cms/src/console/ControllerTrait.php(88): yii\console\Controller->runAction('', Array)
+#23 /var/www/html/vendor/craftcms/cms/src/console/Controller.php(216): craft\console\Controller->traitRunAction('', Array)
+#24 /var/www/html/vendor/yiisoft/yii2/base/Module.php(552): craft\console\Controller->runAction('', Array)
+#25 /var/www/html/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('wp-import', Array)
+#26 /var/www/html/vendor/craftcms/cms/src/console/Application.php(91): yii\console\Application->runAction('wp-import', Array)
+#27 /var/www/html/vendor/yiisoft/yii2/console/Application.php(147): craft\console\Application->runAction('wp-import', Array)
+#28 /var/www/html/vendor/craftcms/cms/src/console/Application.php(122): yii\console\Application->handleRequest(Object(craft\console\Request))
+#29 /var/www/html/vendor/yiisoft/yii2/base/Application.php(384): craft\console\Application->handleRequest(Object(craft\console\Request))
+#30 /var/www/html/craft(13): yii\base\Application->run()
+#31 {main}
+--------------------------------------------------------------------------------
+Error: Client error: `GET https://jeffbridgforth.com/wp-content/uploads/stateofcss2022.webp` resulted in a `404 Not Found` response:
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Page not found | Jeff Bridgforth</title>
+		<meta http-equiv="Content-T (truncated...)
+
+Content type: media
+Item ID: 9282
+Location: /var/www/html/vendor/guzzlehttp/guzzle/src/Exception/RequestException.php:111
+Trace:
+#0 /var/www/html/vendor/guzzlehttp/guzzle/src/Middleware.php(72): GuzzleHttp\Exception\RequestException::create(Object(GuzzleHttp\Psr7\Request), Object(GuzzleHttp\Psr7\Response), NULL, Array, NULL)
+#1 /var/www/html/vendor/guzzlehttp/promises/src/Promise.php(209): GuzzleHttp\Middleware::GuzzleHttp\{closure}(Object(GuzzleHttp\Psr7\Response))
+#2 /var/www/html/vendor/guzzlehttp/promises/src/Promise.php(158): GuzzleHttp\Promise\Promise::callHandler(1, Object(GuzzleHttp\Psr7\Response), NULL)
+#3 /var/www/html/vendor/guzzlehttp/promises/src/TaskQueue.php(52): GuzzleHttp\Promise\Promise::GuzzleHttp\Promise\{closure}()
+#4 /var/www/html/vendor/guzzlehttp/promises/src/Promise.php(251): GuzzleHttp\Promise\TaskQueue->run(true)
+#5 /var/www/html/vendor/guzzlehttp/promises/src/Promise.php(227): GuzzleHttp\Promise\Promise->invokeWaitFn()
+#6 /var/www/html/vendor/guzzlehttp/promises/src/Promise.php(272): GuzzleHttp\Promise\Promise->waitIfPending()
+#7 /var/www/html/vendor/guzzlehttp/promises/src/Promise.php(229): GuzzleHttp\Promise\Promise->invokeWaitList()
+#8 /var/www/html/vendor/guzzlehttp/promises/src/Promise.php(69): GuzzleHttp\Promise\Promise->waitIfPending()
+#9 /var/www/html/vendor/guzzlehttp/guzzle/src/Client.php(189): GuzzleHttp\Promise\Promise->wait()
+#10 /var/www/html/vendor/guzzlehttp/guzzle/src/ClientTrait.php(44): GuzzleHttp\Client->request('GET', 'https://jeffbri...', Array)
+#11 /var/www/html/vendor/craftcms/wp-import/src/importers/Media.php(75): GuzzleHttp\Client->get('https://jeffbri...')
+#12 /var/www/html/vendor/craftcms/wp-import/src/Command.php(1024): craft\wpimport\importers\Media->populate(Object(craft\elements\Asset), Array)
+#13 /var/www/html/vendor/craftcms/cms/src/console/Controller.php(493): craft\wpimport\Command->craft\wpimport\{closure}()
+#14 /var/www/html/vendor/craftcms/wp-import/src/Command.php(1009): craft\console\Controller->do('Importing media...', Object(Closure))
+#15 /var/www/html/vendor/craftcms/wp-import/src/Command.php(336): craft\wpimport\Command->import('media', Array)
+#16 /var/www/html/vendor/craftcms/cms/src/console/Controller.php(493): craft\wpimport\Command->craft\wpimport\{closure}()
+#17 /var/www/html/vendor/craftcms/wp-import/src/Command.php(328): craft\console\Controller->do('Importing media', Object(Closure))
+#18 [internal function]: craft\wpimport\Command->actionImport()
+#19 /var/www/html/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#20 /var/www/html/vendor/yiisoft/yii2/base/Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#21 /var/www/html/vendor/yiisoft/yii2/console/Controller.php(180): yii\base\Controller->runAction('', Array)
+#22 /var/www/html/vendor/craftcms/cms/src/console/ControllerTrait.php(88): yii\console\Controller->runAction('', Array)
+#23 /var/www/html/vendor/craftcms/cms/src/console/Controller.php(216): craft\console\Controller->traitRunAction('', Array)
+#24 /var/www/html/vendor/yiisoft/yii2/base/Module.php(552): craft\console\Controller->runAction('', Array)
+#25 /var/www/html/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('wp-import', Array)
+#26 /var/www/html/vendor/craftcms/cms/src/console/Application.php(91): yii\console\Application->runAction('wp-import', Array)
+#27 /var/www/html/vendor/yiisoft/yii2/console/Application.php(147): craft\console\Application->runAction('wp-import', Array)
+#28 /var/www/html/vendor/craftcms/cms/src/console/Application.php(122): yii\console\Application->handleRequest(Object(craft\console\Request))
+#29 /var/www/html/vendor/yiisoft/yii2/base/Application.php(384): craft\console\Application->handleRequest(Object(craft\console\Request))
+#30 /var/www/html/craft(13): yii\base\Application->run()
+#31 {main}
+--------------------------------------------------------------------------------
+Error: Client error: `GET https://jeffbridgforth.com/wp-content/uploads/hero-clip-path.svg` resulted in a `404 Not Found` response:
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Page not found | Jeff Bridgforth</title>
+		<meta http-equiv="Content-T (truncated...)
+
+Content type: media
+Item ID: 9153
+Location: /var/www/html/vendor/guzzlehttp/guzzle/src/Exception/RequestException.php:111
+Trace:
+#0 /var/www/html/vendor/guzzlehttp/guzzle/src/Middleware.php(72): GuzzleHttp\Exception\RequestException::create(Object(GuzzleHttp\Psr7\Request), Object(GuzzleHttp\Psr7\Response), NULL, Array, NULL)
+#1 /var/www/html/vendor/guzzlehttp/promises/src/Promise.php(209): GuzzleHttp\Middleware::GuzzleHttp\{closure}(Object(GuzzleHttp\Psr7\Response))
+#2 /var/www/html/vendor/guzzlehttp/promises/src/Promise.php(158): GuzzleHttp\Promise\Promise::callHandler(1, Object(GuzzleHttp\Psr7\Response), NULL)
+#3 /var/www/html/vendor/guzzlehttp/promises/src/TaskQueue.php(52): GuzzleHttp\Promise\Promise::GuzzleHttp\Promise\{closure}()
+#4 /var/www/html/vendor/guzzlehttp/promises/src/Promise.php(251): GuzzleHttp\Promise\TaskQueue->run(true)
+#5 /var/www/html/vendor/guzzlehttp/promises/src/Promise.php(227): GuzzleHttp\Promise\Promise->invokeWaitFn()
+#6 /var/www/html/vendor/guzzlehttp/promises/src/Promise.php(272): GuzzleHttp\Promise\Promise->waitIfPending()
+#7 /var/www/html/vendor/guzzlehttp/promises/src/Promise.php(229): GuzzleHttp\Promise\Promise->invokeWaitList()
+#8 /var/www/html/vendor/guzzlehttp/promises/src/Promise.php(69): GuzzleHttp\Promise\Promise->waitIfPending()
+#9 /var/www/html/vendor/guzzlehttp/guzzle/src/Client.php(189): GuzzleHttp\Promise\Promise->wait()
+#10 /var/www/html/vendor/guzzlehttp/guzzle/src/ClientTrait.php(44): GuzzleHttp\Client->request('GET', 'https://jeffbri...', Array)
+#11 /var/www/html/vendor/craftcms/wp-import/src/importers/Media.php(75): GuzzleHttp\Client->get('https://jeffbri...')
+#12 /var/www/html/vendor/craftcms/wp-import/src/Command.php(1024): craft\wpimport\importers\Media->populate(Object(craft\elements\Asset), Array)
+#13 /var/www/html/vendor/craftcms/cms/src/console/Controller.php(493): craft\wpimport\Command->craft\wpimport\{closure}()
+#14 /var/www/html/vendor/craftcms/wp-import/src/Command.php(1009): craft\console\Controller->do('Importing media...', Object(Closure))
+#15 /var/www/html/vendor/craftcms/wp-import/src/Command.php(336): craft\wpimport\Command->import('media', Array)
+#16 /var/www/html/vendor/craftcms/cms/src/console/Controller.php(493): craft\wpimport\Command->craft\wpimport\{closure}()
+#17 /var/www/html/vendor/craftcms/wp-import/src/Command.php(328): craft\console\Controller->do('Importing media', Object(Closure))
+#18 [internal function]: craft\wpimport\Command->actionImport()
+#19 /var/www/html/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#20 /var/www/html/vendor/yiisoft/yii2/base/Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#21 /var/www/html/vendor/yiisoft/yii2/console/Controller.php(180): yii\base\Controller->runAction('', Array)
+#22 /var/www/html/vendor/craftcms/cms/src/console/ControllerTrait.php(88): yii\console\Controller->runAction('', Array)
+#23 /var/www/html/vendor/craftcms/cms/src/console/Controller.php(216): craft\console\Controller->traitRunAction('', Array)
+#24 /var/www/html/vendor/yiisoft/yii2/base/Module.php(552): craft\console\Controller->runAction('', Array)
+#25 /var/www/html/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('wp-import', Array)
+#26 /var/www/html/vendor/craftcms/cms/src/console/Application.php(91): yii\console\Application->runAction('wp-import', Array)
+#27 /var/www/html/vendor/yiisoft/yii2/console/Application.php(147): craft\console\Application->runAction('wp-import', Array)
+#28 /var/www/html/vendor/craftcms/cms/src/console/Application.php(122): yii\console\Application->handleRequest(Object(craft\console\Request))
+#29 /var/www/html/vendor/yiisoft/yii2/base/Application.php(384): craft\console\Application->handleRequest(Object(craft\console\Request))
+#30 /var/www/html/craft(13): yii\base\Application->run()
+#31 {main}
+--------------------------------------------------------------------------------
+Error: Client error: `GET https://jeffbridgforth.com/wp-content/uploads/enable-container-queries.webp` resulted in a `404 Not Found` response:
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Page not found | Jeff Bridgforth</title>
+		<meta http-equiv="Content-T (truncated...)
+
+Content type: media
+Item ID: 9123
+Location: /var/www/html/vendor/guzzlehttp/guzzle/src/Exception/RequestException.php:111
+Trace:
+#0 /var/www/html/vendor/guzzlehttp/guzzle/src/Middleware.php(72): GuzzleHttp\Exception\RequestException::create(Object(GuzzleHttp\Psr7\Request), Object(GuzzleHttp\Psr7\Response), NULL, Array, NULL)
+#1 /var/www/html/vendor/guzzlehttp/promises/src/Promise.php(209): GuzzleHttp\Middleware::GuzzleHttp\{closure}(Object(GuzzleHttp\Psr7\Response))
+#2 /var/www/html/vendor/guzzlehttp/promises/src/Promise.php(158): GuzzleHttp\Promise\Promise::callHandler(1, Object(GuzzleHttp\Psr7\Response), NULL)
+#3 /var/www/html/vendor/guzzlehttp/promises/src/TaskQueue.php(52): GuzzleHttp\Promise\Promise::GuzzleHttp\Promise\{closure}()
+#4 /var/www/html/vendor/guzzlehttp/promises/src/Promise.php(251): GuzzleHttp\Promise\TaskQueue->run(true)
+#5 /var/www/html/vendor/guzzlehttp/promises/src/Promise.php(227): GuzzleHttp\Promise\Promise->invokeWaitFn()
+#6 /var/www/html/vendor/guzzlehttp/promises/src/Promise.php(272): GuzzleHttp\Promise\Promise->waitIfPending()
+#7 /var/www/html/vendor/guzzlehttp/promises/src/Promise.php(229): GuzzleHttp\Promise\Promise->invokeWaitList()
+#8 /var/www/html/vendor/guzzlehttp/promises/src/Promise.php(69): GuzzleHttp\Promise\Promise->waitIfPending()
+#9 /var/www/html/vendor/guzzlehttp/guzzle/src/Client.php(189): GuzzleHttp\Promise\Promise->wait()
+#10 /var/www/html/vendor/guzzlehttp/guzzle/src/ClientTrait.php(44): GuzzleHttp\Client->request('GET', 'https://jeffbri...', Array)
+#11 /var/www/html/vendor/craftcms/wp-import/src/importers/Media.php(75): GuzzleHttp\Client->get('https://jeffbri...')
+#12 /var/www/html/vendor/craftcms/wp-import/src/Command.php(1024): craft\wpimport\importers\Media->populate(Object(craft\elements\Asset), Array)
+#13 /var/www/html/vendor/craftcms/cms/src/console/Controller.php(493): craft\wpimport\Command->craft\wpimport\{closure}()
+#14 /var/www/html/vendor/craftcms/wp-import/src/Command.php(1009): craft\console\Controller->do('Importing media...', Object(Closure))
+#15 /var/www/html/vendor/craftcms/wp-import/src/Command.php(336): craft\wpimport\Command->import('media', Array)
+#16 /var/www/html/vendor/craftcms/cms/src/console/Controller.php(493): craft\wpimport\Command->craft\wpimport\{closure}()
+#17 /var/www/html/vendor/craftcms/wp-import/src/Command.php(328): craft\console\Controller->do('Importing media', Object(Closure))
+#18 [internal function]: craft\wpimport\Command->actionImport()
+#19 /var/www/html/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#20 /var/www/html/vendor/yiisoft/yii2/base/Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#21 /var/www/html/vendor/yiisoft/yii2/console/Controller.php(180): yii\base\Controller->runAction('', Array)
+#22 /var/www/html/vendor/craftcms/cms/src/console/ControllerTrait.php(88): yii\console\Controller->runAction('', Array)
+#23 /var/www/html/vendor/craftcms/cms/src/console/Controller.php(216): craft\console\Controller->traitRunAction('', Array)
+#24 /var/www/html/vendor/yiisoft/yii2/base/Module.php(552): craft\console\Controller->runAction('', Array)
+#25 /var/www/html/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('wp-import', Array)
+#26 /var/www/html/vendor/craftcms/cms/src/console/Application.php(91): yii\console\Application->runAction('wp-import', Array)
+#27 /var/www/html/vendor/yiisoft/yii2/console/Application.php(147): craft\console\Application->runAction('wp-import', Array)
+#28 /var/www/html/vendor/craftcms/cms/src/console/Application.php(122): yii\console\Application->handleRequest(Object(craft\console\Request))
+#29 /var/www/html/vendor/yiisoft/yii2/base/Application.php(384): craft\console\Application->handleRequest(Object(craft\console\Request))
+#30 /var/www/html/craft(13): yii\base\Application->run()
+#31 {main}
+--------------------------------------------------------------------------------
+Error: Client error: `GET https://jeffbridgforth.com/wp-content/uploads/confilict-avoidance-cnc13.pdf` resulted in a `404 Not Found` response:
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Page not found | Jeff Bridgforth</title>
+		<meta http-equiv="Content-T (truncated...)
+
+Content type: media
+Item ID: 7476
+Location: /var/www/html/vendor/guzzlehttp/guzzle/src/Exception/RequestException.php:111
+Trace:
+#0 /var/www/html/vendor/guzzlehttp/guzzle/src/Middleware.php(72): GuzzleHttp\Exception\RequestException::create(Object(GuzzleHttp\Psr7\Request), Object(GuzzleHttp\Psr7\Response), NULL, Array, NULL)
+#1 /var/www/html/vendor/guzzlehttp/promises/src/Promise.php(209): GuzzleHttp\Middleware::GuzzleHttp\{closure}(Object(GuzzleHttp\Psr7\Response))
+#2 /var/www/html/vendor/guzzlehttp/promises/src/Promise.php(158): GuzzleHttp\Promise\Promise::callHandler(1, Object(GuzzleHttp\Psr7\Response), NULL)
+#3 /var/www/html/vendor/guzzlehttp/promises/src/TaskQueue.php(52): GuzzleHttp\Promise\Promise::GuzzleHttp\Promise\{closure}()
+#4 /var/www/html/vendor/guzzlehttp/promises/src/Promise.php(251): GuzzleHttp\Promise\TaskQueue->run(true)
+#5 /var/www/html/vendor/guzzlehttp/promises/src/Promise.php(227): GuzzleHttp\Promise\Promise->invokeWaitFn()
+#6 /var/www/html/vendor/guzzlehttp/promises/src/Promise.php(272): GuzzleHttp\Promise\Promise->waitIfPending()
+#7 /var/www/html/vendor/guzzlehttp/promises/src/Promise.php(229): GuzzleHttp\Promise\Promise->invokeWaitList()
+#8 /var/www/html/vendor/guzzlehttp/promises/src/Promise.php(69): GuzzleHttp\Promise\Promise->waitIfPending()
+#9 /var/www/html/vendor/guzzlehttp/guzzle/src/Client.php(189): GuzzleHttp\Promise\Promise->wait()
+#10 /var/www/html/vendor/guzzlehttp/guzzle/src/ClientTrait.php(44): GuzzleHttp\Client->request('GET', 'https://jeffbri...', Array)
+#11 /var/www/html/vendor/craftcms/wp-import/src/importers/Media.php(75): GuzzleHttp\Client->get('https://jeffbri...')
+#12 /var/www/html/vendor/craftcms/wp-import/src/Command.php(1024): craft\wpimport\importers\Media->populate(Object(craft\elements\Asset), Array)
+#13 /var/www/html/vendor/craftcms/cms/src/console/Controller.php(493): craft\wpimport\Command->craft\wpimport\{closure}()
+#14 /var/www/html/vendor/craftcms/wp-import/src/Command.php(1009): craft\console\Controller->do('Importing media...', Object(Closure))
+#15 /var/www/html/vendor/craftcms/wp-import/src/Command.php(336): craft\wpimport\Command->import('media', Array)
+#16 /var/www/html/vendor/craftcms/cms/src/console/Controller.php(493): craft\wpimport\Command->craft\wpimport\{closure}()
+#17 /var/www/html/vendor/craftcms/wp-import/src/Command.php(328): craft\console\Controller->do('Importing media', Object(Closure))
+#18 [internal function]: craft\wpimport\Command->actionImport()
+#19 /var/www/html/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#20 /var/www/html/vendor/yiisoft/yii2/base/Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#21 /var/www/html/vendor/yiisoft/yii2/console/Controller.php(180): yii\base\Controller->runAction('', Array)
+#22 /var/www/html/vendor/craftcms/cms/src/console/ControllerTrait.php(88): yii\console\Controller->runAction('', Array)
+#23 /var/www/html/vendor/craftcms/cms/src/console/Controller.php(216): craft\console\Controller->traitRunAction('', Array)
+#24 /var/www/html/vendor/yiisoft/yii2/base/Module.php(552): craft\console\Controller->runAction('', Array)
+#25 /var/www/html/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('wp-import', Array)
+#26 /var/www/html/vendor/craftcms/cms/src/console/Application.php(91): yii\console\Application->runAction('wp-import', Array)
+#27 /var/www/html/vendor/yiisoft/yii2/console/Application.php(147): craft\console\Application->runAction('wp-import', Array)
+#28 /var/www/html/vendor/craftcms/cms/src/console/Application.php(122): yii\console\Application->handleRequest(Object(craft\console\Request))
+#29 /var/www/html/vendor/yiisoft/yii2/base/Application.php(384): craft\console\Application->handleRequest(Object(craft\console\Request))
+#30 /var/www/html/craft(13): yii\base\Application->run()
+#31 {main}
+--------------------------------------------------------------------------------
+Error: Client error: `GET https://jeffbridgforth.com/wp-content/uploads/2008/09/chocolatex.jpg` resulted in a `404 Not Found` response:
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Page not found | Jeff Bridgforth</title>
+		<meta http-equiv="Content-T (truncated...)
+
+Content type: media
+Item ID: 458
+Location: /var/www/html/vendor/guzzlehttp/guzzle/src/Exception/RequestException.php:111
+Trace:
+#0 /var/www/html/vendor/guzzlehttp/guzzle/src/Middleware.php(72): GuzzleHttp\Exception\RequestException::create(Object(GuzzleHttp\Psr7\Request), Object(GuzzleHttp\Psr7\Response), NULL, Array, NULL)
+#1 /var/www/html/vendor/guzzlehttp/promises/src/Promise.php(209): GuzzleHttp\Middleware::GuzzleHttp\{closure}(Object(GuzzleHttp\Psr7\Response))
+#2 /var/www/html/vendor/guzzlehttp/promises/src/Promise.php(158): GuzzleHttp\Promise\Promise::callHandler(1, Object(GuzzleHttp\Psr7\Response), NULL)
+#3 /var/www/html/vendor/guzzlehttp/promises/src/TaskQueue.php(52): GuzzleHttp\Promise\Promise::GuzzleHttp\Promise\{closure}()
+#4 /var/www/html/vendor/guzzlehttp/promises/src/Promise.php(251): GuzzleHttp\Promise\TaskQueue->run(true)
+#5 /var/www/html/vendor/guzzlehttp/promises/src/Promise.php(227): GuzzleHttp\Promise\Promise->invokeWaitFn()
+#6 /var/www/html/vendor/guzzlehttp/promises/src/Promise.php(272): GuzzleHttp\Promise\Promise->waitIfPending()
+#7 /var/www/html/vendor/guzzlehttp/promises/src/Promise.php(229): GuzzleHttp\Promise\Promise->invokeWaitList()
+#8 /var/www/html/vendor/guzzlehttp/promises/src/Promise.php(69): GuzzleHttp\Promise\Promise->waitIfPending()
+#9 /var/www/html/vendor/guzzlehttp/guzzle/src/Client.php(189): GuzzleHttp\Promise\Promise->wait()
+#10 /var/www/html/vendor/guzzlehttp/guzzle/src/ClientTrait.php(44): GuzzleHttp\Client->request('GET', 'https://jeffbri...', Array)
+#11 /var/www/html/vendor/craftcms/wp-import/src/importers/Media.php(75): GuzzleHttp\Client->get('https://jeffbri...')
+#12 /var/www/html/vendor/craftcms/wp-import/src/Command.php(1024): craft\wpimport\importers\Media->populate(Object(craft\elements\Asset), Array)
+#13 /var/www/html/vendor/craftcms/cms/src/console/Controller.php(493): craft\wpimport\Command->craft\wpimport\{closure}()
+#14 /var/www/html/vendor/craftcms/wp-import/src/Command.php(1009): craft\console\Controller->do('Importing media...', Object(Closure))
+#15 /var/www/html/vendor/craftcms/wp-import/src/Command.php(336): craft\wpimport\Command->import('media', Array)
+#16 /var/www/html/vendor/craftcms/cms/src/console/Controller.php(493): craft\wpimport\Command->craft\wpimport\{closure}()
+#17 /var/www/html/vendor/craftcms/wp-import/src/Command.php(328): craft\console\Controller->do('Importing media', Object(Closure))
+#18 [internal function]: craft\wpimport\Command->actionImport()
+#19 /var/www/html/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#20 /var/www/html/vendor/yiisoft/yii2/base/Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#21 /var/www/html/vendor/yiisoft/yii2/console/Controller.php(180): yii\base\Controller->runAction('', Array)
+#22 /var/www/html/vendor/craftcms/cms/src/console/ControllerTrait.php(88): yii\console\Controller->runAction('', Array)
+#23 /var/www/html/vendor/craftcms/cms/src/console/Controller.php(216): craft\console\Controller->traitRunAction('', Array)
+#24 /var/www/html/vendor/yiisoft/yii2/base/Module.php(552): craft\console\Controller->runAction('', Array)
+#25 /var/www/html/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('wp-import', Array)
+#26 /var/www/html/vendor/craftcms/cms/src/console/Application.php(91): yii\console\Application->runAction('wp-import', Array)
+#27 /var/www/html/vendor/yiisoft/yii2/console/Application.php(147): craft\console\Application->runAction('wp-import', Array)
+#28 /var/www/html/vendor/craftcms/cms/src/console/Application.php(122): yii\console\Application->handleRequest(Object(craft\console\Request))
+#29 /var/www/html/vendor/yiisoft/yii2/base/Application.php(384): craft\console\Application->handleRequest(Object(craft\console\Request))
+#30 /var/www/html/craft(13): yii\base\Application->run()
+#31 {main}
+--------------------------------------------------------------------------------
+Error: Client error: `GET https://jeffbridgforth.com/wp-content/uploads/2008/04/rzf.php` resulted in a `404 Not Found` response:
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Page not found | Jeff Bridgforth</title>
+		<meta http-equiv="Content-T (truncated...)
+
+Content type: media
+Item ID: 431
+Location: /var/www/html/vendor/guzzlehttp/guzzle/src/Exception/RequestException.php:111
+Trace:
+#0 /var/www/html/vendor/guzzlehttp/guzzle/src/Middleware.php(72): GuzzleHttp\Exception\RequestException::create(Object(GuzzleHttp\Psr7\Request), Object(GuzzleHttp\Psr7\Response), NULL, Array, NULL)
+#1 /var/www/html/vendor/guzzlehttp/promises/src/Promise.php(209): GuzzleHttp\Middleware::GuzzleHttp\{closure}(Object(GuzzleHttp\Psr7\Response))
+#2 /var/www/html/vendor/guzzlehttp/promises/src/Promise.php(158): GuzzleHttp\Promise\Promise::callHandler(1, Object(GuzzleHttp\Psr7\Response), NULL)
+#3 /var/www/html/vendor/guzzlehttp/promises/src/TaskQueue.php(52): GuzzleHttp\Promise\Promise::GuzzleHttp\Promise\{closure}()
+#4 /var/www/html/vendor/guzzlehttp/promises/src/Promise.php(251): GuzzleHttp\Promise\TaskQueue->run(true)
+#5 /var/www/html/vendor/guzzlehttp/promises/src/Promise.php(227): GuzzleHttp\Promise\Promise->invokeWaitFn()
+#6 /var/www/html/vendor/guzzlehttp/promises/src/Promise.php(272): GuzzleHttp\Promise\Promise->waitIfPending()
+#7 /var/www/html/vendor/guzzlehttp/promises/src/Promise.php(229): GuzzleHttp\Promise\Promise->invokeWaitList()
+#8 /var/www/html/vendor/guzzlehttp/promises/src/Promise.php(69): GuzzleHttp\Promise\Promise->waitIfPending()
+#9 /var/www/html/vendor/guzzlehttp/guzzle/src/Client.php(189): GuzzleHttp\Promise\Promise->wait()
+#10 /var/www/html/vendor/guzzlehttp/guzzle/src/ClientTrait.php(44): GuzzleHttp\Client->request('GET', 'https://jeffbri...', Array)
+#11 /var/www/html/vendor/craftcms/wp-import/src/importers/Media.php(75): GuzzleHttp\Client->get('https://jeffbri...')
+#12 /var/www/html/vendor/craftcms/wp-import/src/Command.php(1024): craft\wpimport\importers\Media->populate(Object(craft\elements\Asset), Array)
+#13 /var/www/html/vendor/craftcms/cms/src/console/Controller.php(493): craft\wpimport\Command->craft\wpimport\{closure}()
+#14 /var/www/html/vendor/craftcms/wp-import/src/Command.php(1009): craft\console\Controller->do('Importing media...', Object(Closure))
+#15 /var/www/html/vendor/craftcms/wp-import/src/Command.php(336): craft\wpimport\Command->import('media', Array)
+#16 /var/www/html/vendor/craftcms/cms/src/console/Controller.php(493): craft\wpimport\Command->craft\wpimport\{closure}()
+#17 /var/www/html/vendor/craftcms/wp-import/src/Command.php(328): craft\console\Controller->do('Importing media', Object(Closure))
+#18 [internal function]: craft\wpimport\Command->actionImport()
+#19 /var/www/html/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#20 /var/www/html/vendor/yiisoft/yii2/base/Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#21 /var/www/html/vendor/yiisoft/yii2/console/Controller.php(180): yii\base\Controller->runAction('', Array)
+#22 /var/www/html/vendor/craftcms/cms/src/console/ControllerTrait.php(88): yii\console\Controller->runAction('', Array)
+#23 /var/www/html/vendor/craftcms/cms/src/console/Controller.php(216): craft\console\Controller->traitRunAction('', Array)
+#24 /var/www/html/vendor/yiisoft/yii2/base/Module.php(552): craft\console\Controller->runAction('', Array)
+#25 /var/www/html/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('wp-import', Array)
+#26 /var/www/html/vendor/craftcms/cms/src/console/Application.php(91): yii\console\Application->runAction('wp-import', Array)
+#27 /var/www/html/vendor/yiisoft/yii2/console/Application.php(147): craft\console\Application->runAction('wp-import', Array)
+#28 /var/www/html/vendor/craftcms/cms/src/console/Application.php(122): yii\console\Application->handleRequest(Object(craft\console\Request))
+#29 /var/www/html/vendor/yiisoft/yii2/base/Application.php(384): craft\console\Application->handleRequest(Object(craft\console\Request))
+#30 /var/www/html/craft(13): yii\base\Application->run()
+#31 {main}
+--------------------------------------------------------------------------------
+Error: Unknown block type: core/shortcode
+Block data:
+{
+    "blockName": "core/shortcode",
+    "attrs": [],
+    "innerBlocks": [],
+    "innerHTML": "\n[gallery link=\"file\" exclude=\"6096,6060,6055,6043\"]\n",
+    "innerContent": [
+        "\n[gallery link=\"file\" exclude=\"6096,6060,6055,6043\"]\n"
+    ]
+}
+--------------------------------------------------------------------------------
+Error: Unknown block type: core/shortcode
+Block data:
+{
+    "blockName": "core/shortcode",
+    "attrs": [],
+    "innerBlocks": [],
+    "innerHTML": "\n[gallery link=\"file\" exclude=\"6096,6060,6055,6043\"]\n",
+    "innerContent": [
+        "\n[gallery link=\"file\" exclude=\"6096,6060,6055,6043\"]\n"
+    ]
+}
+--------------------------------------------------------------------------------
+Error: Unknown block type: core/shortcode
+Block data:
+{
+    "blockName": "core/shortcode",
+    "attrs": [],
+    "innerBlocks": [],
+    "innerHTML": "\n[gallery link=\"file\" exclude=\"6096,6060,6055,6043\"]\n",
+    "innerContent": [
+        "\n[gallery link=\"file\" exclude=\"6096,6060,6055,6043\"]\n"
+    ]
+}
+--------------------------------------------------------------------------------
+Error: Unknown block type: core/shortcode
+Block data:
+{
+    "blockName": "core/shortcode",
+    "attrs": [],
+    "innerBlocks": [],
+    "innerHTML": "\n[gallery link=\"file\" exclude=\"6096,6060,6055,6043\"]\n",
+    "innerContent": [
+        "\n[gallery link=\"file\" exclude=\"6096,6060,6055,6043\"]\n"
+    ]
+}
+--------------------------------------------------------------------------------
+Error: Unknown block type: core/shortcode
+Block data:
+{
+    "blockName": "core/shortcode",
+    "attrs": [],
+    "innerBlocks": [],
+    "innerHTML": "\n[gallery link=\"file\" exclude=\"6096,6060,6055,6043\"]\n",
+    "innerContent": [
+        "\n[gallery link=\"file\" exclude=\"6096,6060,6055,6043\"]\n"
+    ]
+}
+--------------------------------------------------------------------------------
+Error: Unknown block type: core/shortcode
+Block data:
+{
+    "blockName": "core/shortcode",
+    "attrs": [],
+    "innerBlocks": [],
+    "innerHTML": "\n[gallery link=\"file\" exclude=\"6096,6060,6055,6043\"]\n",
+    "innerContent": [
+        "\n[gallery link=\"file\" exclude=\"6096,6060,6055,6043\"]\n"
+    ]
+}
+--------------------------------------------------------------------------------
+Error: Unknown block type: core/shortcode
+Block data:
+{
+    "blockName": "core/shortcode",
+    "attrs": [],
+    "innerBlocks": [],
+    "innerHTML": "\n[gallery link=\"file\" exclude=\"6096,6060,6055,6043\"]\n",
+    "innerContent": [
+        "\n[gallery link=\"file\" exclude=\"6096,6060,6055,6043\"]\n"
+    ]
+}
+--------------------------------------------------------------------------------
+Error: Unknown block type: core/shortcode
+Block data:
+{
+    "blockName": "core/shortcode",
+    "attrs": [],
+    "innerBlocks": [],
+    "innerHTML": "\n[gallery link=\"file\" exclude=\"6096,6060,6055,6043\"]\n",
+    "innerContent": [
+        "\n[gallery link=\"file\" exclude=\"6096,6060,6055,6043\"]\n"
+    ]
+}
+--------------------------------------------------------------------------------
+Error: Unknown block type: core/shortcode
+Block data:
+{
+    "blockName": "core/shortcode",
+    "attrs": [],
+    "innerBlocks": [],
+    "innerHTML": "\n[gallery link=\"file\" exclude=\"6096,6060,6055,6043\"]\n",
+    "innerContent": [
+        "\n[gallery link=\"file\" exclude=\"6096,6060,6055,6043\"]\n"
+    ]
+}

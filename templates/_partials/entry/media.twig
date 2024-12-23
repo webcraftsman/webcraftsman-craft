@@ -1,0 +1,8 @@
+{% import '_utilities/image' as img %}
+{% set addClass = entry.mediaClass %}
+{% set imageWidth = entry.imageWidth %}
+
+<figure class="image-block my-12{% if addClass %} {{ addClass }}{% endif %}" {% if imageWidth %}style="max-width: {{ imageWidth }}px;{% endif %}">
+  {% set assets = entry.media.eagerly().all() %}
+  {{ img.pictures(assets) }}
+</figure>
