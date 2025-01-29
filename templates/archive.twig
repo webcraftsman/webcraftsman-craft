@@ -71,6 +71,8 @@
     {% set entries = craft.entries.section('posts') %}
     {% set entryCount = entries|length %}
         <h1>Blog Archive ({{ entryCount }} posts)</h1>
+		{% include "search/form" %}
+
         {% set allEntries = craft.entries.section('posts').all() %}
 
         <ul class="archive-jump-links">
