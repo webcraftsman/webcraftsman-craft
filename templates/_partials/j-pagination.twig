@@ -1,0 +1,34 @@
+<ol class='pagination'>
+
+    {% if pageInfo.prevUrl %}<li><a href='{{ pageInfo.prevUrl }}' class='blogPostList__pagination__prev'>&lt;</a></li>{% endif %}
+
+    {% if pageInfo.currentPage > 2 %}
+        <li><a class='blogPostList__pagination__pageNumber' href='{{ pageInfo.firstUrl }}'>{{ 1 }}</a></li>
+    {% endif %}
+
+    {% if pageInfo.currentPage > 3 %}
+        <li><span>...</span></li>
+    {% endif %}
+
+    {% for page, url in pageInfo.getPrevUrls(1) %}
+        <li><a class='blogPostList__pagination__pageNumber' href='{{ url }}'>{{ page }}</a></li>
+    {% endfor %}
+
+    <li><span class='current-page'>{{ pageInfo.currentPage }}</span></li>
+
+    {% for page, url in pageInfo.getNextUrls(1) %}
+        <li><a class='blogPostList__pagination__pageNumber' href='{{ url }}'>{{ page }}</a></li>
+    {% endfor %}
+
+
+    {% if pageInfo.currentPage < pageInfo.totalPages-2 %}
+        <li><span>...</span></li>
+    {% endif %}
+
+    {% if pageInfo.currentPage < pageInfo.totalPages-1 %}
+        <li><a class='blogPostList__pagination__pageNumber' href='{{ pageInfo.lastUrl }}'>{{ pageInfo.totalPages }}</a></li>
+    {% endif %}
+
+    {% if pageInfo.nextUrl %}<li><a href='{{ pageInfo.nextUrl }}' class='blogPostList__pagination__next'>&gt;</a></li>{% endif %}
+
+</ol>

@@ -1,0 +1,44 @@
+{% set global = craft.entries.section('global').one() %}
+{% set notes = craft.entries
+    .section('notes')
+    .limit(10)
+    .orderBy('postDate DESC')
+%}
+{% paginate notes as pageInfo, noteEntries %}
+
+
+<!DOCTYPE html>
+<html lang="en">
+{% include "_partials/_head" with {
+	pageTitle: "Notes"
+} %}
+
+<body class="post-type-archive-notes">
+
+  {% include "_partials/j-header" %}
+
+  <main>
+
+  <h1>Notes</h1>
+  <p>Page {{pageInfo.currentPage}} of {{ pageInfo.totalPages }} </p>
+
+    <div class="archive-notes-listing">
+
+
+        {% for note in noteEntries %}
+            {% include "_partials/_note-card" %}
+        {% endfor %}
+
+        {% if pageInfo.totalPages > 1 %}
+
+            {% include "_partials/j-pagination" %}
+
+        {% endif %}
+
+    </div>
+  </main>
+
+  {% include "_partials/footer" %}
+
+</body>
+</html>

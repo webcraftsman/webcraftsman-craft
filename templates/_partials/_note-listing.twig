@@ -11,7 +11,7 @@
     {% set notes = craft.entries
         .section('notes')
         .orderBy('postDate DESC')
-        .limit(2)
+        .limit(limit)
     %}
 
     {% for note in notes %}

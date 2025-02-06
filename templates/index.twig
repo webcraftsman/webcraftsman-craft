@@ -1,5 +1,5 @@
 {% set global = craft.entries.section('global').one() %}
-{% set pageTitle = pageTitle ?? entry.title ?? siteName %}
+{% set pageTitle = siteName %}
 
 <!DOCTYPE html>
 <html lang="en">
@@ -14,7 +14,7 @@
     {% include "_partials/_post-listing" with {
         limit: 9,
     }%}
-	{% include "_partials/_note-listing" %}
+	{% include "_partials/_note-listing" with {limit: 2} %}
   </main>
 
   {% include "_partials/footer" %}

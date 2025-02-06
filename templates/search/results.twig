@@ -18,10 +18,10 @@
     <div class="post-content">
         <h1>Search results for "{{query}}"</h1>
         {% include "search/form" %}
-        <p>{{entries|length}} results ({{ pageInfo.totalPages }} Pages)</p>
+        <p>{{searchEntries|length}} results ({{ pageInfo.totalPages }} Pages)</p>
 
-        {% if entries | length %}
-        {% for entry in entries %}
+        {% if searchEntries | length %}
+        {% for entry in searchEntries %}
             <article class="search-listing-post">
                 <h2><a href="{{ entry.url }}">{{ entry.title}}</a></h2>
                 <a class="search_link" href="{{ entry.url }}">{{entry.url}}</a>
@@ -29,49 +29,10 @@
         {% endfor %}
 
 		{% if pageInfo.totalPages > 1 %}
-			<ol class="pagination">
-				{% if pageInfo.prevUrl %}<li class="previous"><a href="{{ pageInfo.prevUrl }}">Previous</a></li>{% endif %}{% for page, url in pageInfo.getPrevUrls(4) %}<li><a href="{{ url }}">{{ page }}</a></li>{% endfor %}<li class="current"><span>{{ pageInfo.currentPage }}</span></li>{% for page, url in pageInfo.getNextUrls(4) %}<li><a href="{{ url }}">{{ page }}</a></li>{% endfor %}{% if pageInfo.nextUrl %}<li class="next"><a href="{{ pageInfo.nextUrl }}">Next</a></li>{% endif %}
-			</ol>
 
+        {% include "_partials/j-pagination" %}
 
-		{% endif %}
-
-		{% if pageInfo.totalPages > 1 %}
-<ol class='pagination'>
-
-    {% if pageInfo.prevUrl %}<li><a href='{{ pageInfo.prevUrl }}' class='blogPostList__pagination__prev'>&lt;</a></li>{% endif %}
-
-    {% if pageInfo.currentPage > 2 %}
-        <li><a class='blogPostList__pagination__pageNumber' href='{{ pageInfo.firstUrl }}'>{{ 1 }}</a></li>
-    {% endif %}
-
-    {% if pageInfo.currentPage > 3 %}
-        <li><span>...</span></li>
-    {% endif %}
-
-    {% for page, url in pageInfo.getPrevUrls(1) %}
-        <li><a class='blogPostList__pagination__pageNumber' href='{{ url }}'>{{ page }}</a></li>
-    {% endfor %}
-
-    <li><span class='current-page'>{{ pageInfo.currentPage }}</span></li>
-
-    {% for page, url in pageInfo.getNextUrls(1) %}
-        <li><a class='blogPostList__pagination__pageNumber' href='{{ url }}'>{{ page }}</a></li>
-    {% endfor %}
-
-
-    {% if pageInfo.currentPage < pageInfo.totalPages-2 %}
-        <li><span>...</span></li>
-    {% endif %}
-
-    {% if pageInfo.currentPage < pageInfo.totalPages-1 %}
-        <li><a class='blogPostList__pagination__pageNumber' href='{{ pageInfo.lastUrl }}'>{{ pageInfo.totalPages }}</a></li>
-    {% endif %}
-
-    {% if pageInfo.nextUrl %}<li><a href='{{ pageInfo.nextUrl }}' class='blogPostList__pagination__next'>&gt;</a></li>{% endif %}
-
-</div>
-{% endif %}
+        {% endif %}
 
         {% else %}
             <p>Sorry, no posts matched your search query.</p>
