@@ -5,3 +5,15 @@
     list-style-type: '';
     gap: var(--space-m);
 }
+
+.nav-main a.active {
+    background-color: var(--banner-background-color);
+    color: var(--banner-color);
+}
+
+.single-post a[href*='archive'],
+.post-type-archive-notes a[href*='notes']{
+    background-color: var(--banner-background-color);
+    color: var(--banner-color);
+}
+
